@@ -14,7 +14,6 @@ const ShowSection = () => {
     setAllData(allData.filter((el) => el !== data));
     allData.splice(index, 1);
     localStorage.setItem("contacts", JSON.stringify(allData));
-    window.location.reload();
   };
   const handleSearchInput = (e) => {
     setTextInput(e.target.value);
